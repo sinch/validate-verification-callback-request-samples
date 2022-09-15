@@ -1,0 +1,4 @@
+rootProject.name = 'SinchValidateCallbackRequest'
+
+include 'library'
+include 'application'

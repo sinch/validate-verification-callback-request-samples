@@ -1,0 +1,13 @@
+{
+  "name": "sinch-validate-verification-callback-request",
+  "version": "1.0.0",
+  "description": "This project validates a Verification Event callback received from the Sinch platform when using the [Sinch Verification](https://dashboard.sinch.com/verification/overview) product with callbacks enabled.",
+  "main": "index.js",
+  "author": "Catalin Vasile <contact@catalinvasile.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "utf8": "^3.0.0"
+  }
+}
