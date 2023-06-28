@@ -1,6 +1,4 @@
 const crypto = require('crypto');
-const hash = crypto.createHash('md5');
-
 const express = require('express');
 const app = express();
 app.use(express.raw({ type: "*/*" }))
@@ -17,6 +15,7 @@ const APPLICATION_KEY = "<REPLACE_WITH_APP_KEY>";
 const APPLICATION_SECRET = "<REPLACE_WITH_APP_SECRET>";
 
 app.post('/api/verification/events', (req, res) => {
+    const hash = crypto.createHash('md5');
     const authHeader = req.header('Authorization');
     let authValue = authHeader.split(/[ :]/);
     let callbackKey = authValue[1];
