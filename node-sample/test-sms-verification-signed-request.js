@@ -37,7 +37,7 @@ let stringToSign = 'POST'
     + '\n' + contentMD5
     + '\n' + 'application/json; charset=utf-8'
     + '\n' + 'x-timestamp:'+ timeStampISO
-    + '\n' + '/verification/v1/verifications';
+    + '\n' + '/sinch/callback/result';
 
 hmac.update(stringToSign);
 let signature = hmac.digest('base64');

@@ -117,7 +117,7 @@ class Program
         sb.Append(timestamp);
         sb.AppendLine();
 
-        sb.Append("/verification/v1/verifications");
+        sb.Append("/sinch/callback/result");
 
         return sb.ToString();
     }
